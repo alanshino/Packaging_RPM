@@ -24,9 +24,30 @@ testrpm-1.0-1.fc40.x86_64.rpm
 testrpm-debuginfo-1.0-1.fc40.x86_64.rpm 
 testrpm-debugsource-1.0-1.fc40.x86_64.rpm in the ~/rpmbuild/RPMS directory.
 
-Using ```shell= sudo rpm -Uvh testrpm-1.0-1.fc40.x86_64.rpm ``` will get the following results
+Using ```shell= sudo rpm -Uvh testrpm-1.0-1.fc40.x86_64.rpm``` will get the following results
 
+```shell
 Verifying...                          ################################# [100%]
 Preparing...                          ################################# [100%]
 Updating / installing...
    1:testrpm-1.0-1.fc40               ################################# [100%]
+```
+
+You can also use dnf/yum to install
+```shell
+Dependencies resolved.
+========================================================================================================================================================================================
+ Package                                   Architecture                             Version                                        Repository                                      Size
+========================================================================================================================================================================================
+Installing:
+ testrpm                                   x86_64                                   1.0-1.fc40                                     @commandline                                    11 k
+
+Transaction Summary
+========================================================================================================================================================================================
+Install  1 Package
+
+Total size: 11 k
+Installed size: 16 k
+```
+
+
