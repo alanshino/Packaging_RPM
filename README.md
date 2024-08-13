@@ -18,3 +18,15 @@ The process of creating an RPM package is as follows
 - Create an RPM SPECS archive and place it in rpmbuild/SPECS.
 - Put the previously packaged tar file into rpmbuild/SOURCES.
 - Use rpmbuild command to build a binary RPM.
+
+If the script is executed successfully, you will be able to find 
+testrpm-1.0-1.fc40.x86_64.rpm 
+testrpm-debuginfo-1.0-1.fc40.x86_64.rpm 
+testrpm-debugsource-1.0-1.fc40.x86_64.rpm in the ~/rpmbuild/RPMS directory.
+
+Using ```shell= sudo rpm -Uvh testrpm-1.0-1.fc40.x86_64.rpm ``` will get the following results
+
+Verifying...                          ################################# [100%]
+Preparing...                          ################################# [100%]
+Updating / installing...
+   1:testrpm-1.0-1.fc40               ################################# [100%]
